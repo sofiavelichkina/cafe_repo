@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Кондитерская</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Меню</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./basket.html">Корзина</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./workers.html">О нас</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-light" type="submit">Поиск</button>
+            </form>
+            <form action="./avtir.html">
+                <button class="btn btn-light mx-2" type="submit">Войти</button>
+            </form>    
+                  
+          </div>
+        </div>
+      </nav>
+
+      <div class="mx-2 my-5">
+        <p class="h1 text-center">Меню</p>
+      </div>
+
+      <table class="table table-responsive table-bordered text-center table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">№</th>
+            <th scope="col">Название</th>
+            <th scope="col">Фото</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Редактирование</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Торт Наполеон</td>
+            <td>
+                <img src="./image/napoleon.webp" alt="" width="300px" height="200px">
+            </td>
+            <td>500Р</td>
+            <td class="d-flex flex-row jutify-content">
+                <form class="mx-2" action="./products_form.html">
+                    <button type="submit" class="btn btn-primary">Добавить в заказ</button>
+                </form>
+                <button type="submit" class="btn btn-danger">Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Торт Графские развалины</td>
+            <td>
+                <img src="./image/razvaliny.jpg" alt="" width="300px" height="200px">
+            </td>
+            <td>450Р</td>
+            <td class="d-flex flex-row jutify-content">
+                <form  class="mx-2"  action="./products_form.html">
+                    <button type="submit" class="btn btn-primary">Добавить в заказ</button>
+                </form>
+                <button type="submit" class="btn btn-danger">Удалить</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="container">
+        <footer class="py-3 my-4">
+          <p class="text-center text-muted">©ЮНИТ 2023</p>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
