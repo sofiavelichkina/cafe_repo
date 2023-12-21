@@ -10,3 +10,7 @@
     background-color: rgb(93, 196, 93);
     margin: 10px;
 }
+
+div > img {
+    height: 800px !important;
+}
